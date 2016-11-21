@@ -11,7 +11,14 @@ module.exports = {
   			    'webpack-dev-server/client?http://localhost:8082'
           ],
   plugins: [
-            new webpack.HotModuleReplacementPlugin()
+            new webpack.HotModuleReplacementPlugin(),
+            new webpack.optimize.UglifyJsPlugin({
+              comments: true,
+              mangle: false,
+              compress: {
+                warnings: true
+              }
+            })
   ],
   module: {
 		loaders: [
