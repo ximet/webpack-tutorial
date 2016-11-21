@@ -5,6 +5,9 @@
    "main": "index.js",
    "scripts": {
      "build1": "webpack index.js bundle.js",
+     "build2": "rimraf dist && webpack src/index.js dist/bundle.js",
+     "build3": "rimraf dist && webpack --watch",
+
      "build": "rimraf dist && NODE_ENV=production webpack",
      "dev": "NODE_ENV=development node dev-server.js"
    },
