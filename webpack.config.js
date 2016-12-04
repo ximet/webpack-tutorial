@@ -5,6 +5,7 @@ var cssIdentifier = '[path][name]---[local]';
 var cssLoader = ['style-loader', 'css-loader?localIdentName=' + cssIdentifier];
 
 module.exports = {
+  //entry point - first for app, other for HotModuleReplacementPlugin
   entry: [
             './src/index.js',
             'webpack/hot/dev-server',
@@ -20,6 +21,8 @@ module.exports = {
               }
             })
   ],
+
+  //simple loaders. 1) babel for transplaling, img for ex. with url-loader and css for ex. work with styles
   module: {
 		loaders: [
       {
