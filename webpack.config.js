@@ -15,12 +15,12 @@ module.exports = {
             new webpack.HotModuleReplacementPlugin(),
             new webpack.optimize.UglifyJsPlugin({
               comments: true,
-              mangle: false,
               compress: {
                 warnings: true
               }
             })
   ],
+  devtool: 'soource-map',
 
   //simple loaders. 1) babel for transplaling, img for ex. with url-loader and css for ex. work with styles
   module: {
