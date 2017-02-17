@@ -1,5 +1,5 @@
 import { sum } from './mathService.js';
-var app = document.getElementById('app');
+const app = document.getElementById('app');
 
 //ex. lambda
 const summa = () => ( sum(2,3) )

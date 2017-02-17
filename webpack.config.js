@@ -1,8 +1,8 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
-var cssIdentifier = '[path][name]---[local]';
-var cssLoader = ['style-loader', 'css-loader?localIdentName=' + cssIdentifier];
+const cssIdentifier = '[path][name]---[local]';
+const cssLoader = ['style-loader', 'css-loader?localIdentName=' + cssIdentifier];
 
 module.exports = {
   //entry point - first for app, other for HotModuleReplacementPlugin
