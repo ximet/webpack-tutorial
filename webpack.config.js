@@ -14,10 +14,14 @@ module.exports = {
   plugins: [
             new webpack.HotModuleReplacementPlugin(),
             new webpack.optimize.UglifyJsPlugin({
+              sourceMap: true,
               comments: true,
               compress: {
                 warnings: true
               }
+            }),
+            new webpack.LoaderOptionsPlugin({
+                minimize: true
             })
   ],
   devtool: 'soource-map',
