@@ -1,9 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const cssIdentifier = '[path][name]---[local]';
-const cssLoader = ['style-loader', 'css-loader?localIdentName=' + cssIdentifier];
-
 module.exports = {
   //entry point - first for app, other for HotModuleReplacementPlugin
   entry: [
@@ -23,7 +20,7 @@ module.exports = {
             new webpack.LoaderOptionsPlugin({
                 minimize: true
             })
-  ],
+          ],
   devtool: 'soource-map',
 
   //simple loaders. 1) babel for transplaling, img for ex. with url-loader and css for ex. work with styles
