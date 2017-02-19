@@ -24,21 +24,36 @@ module.exports = {
 
   //simple loaders. 1) babel for transplaling, img for ex. with url-loader and css for ex. work with styles
   module: {
-		loaders: [
+		rules: [
       {
   			test: /\.js$/,
-  			loaders: ['babel-loader'],
-  			exclude: /node_modules/
+  			use: [
+          {
+            loader: 'babel-loader'
+          }
+        ]
 		  },
       {
   			test: /\.(png|jpg|gif)$/,
-  			loaders: ['url-loader?limit=10000&name=images/[hash:12].[ext]'],
-  			exclude: /node_modules/
+  			use: [
+          {
+            loader: 'url-loader?limit=10000&name=images/[hash:12].[ext]'
+          }
+        ]
 		  },
       {
   			test: /\.css$/,
-  			loaders: cssLoader,
-  			exclude: /node_modules/
+  			use: [
+          {
+              loader: "style-loader"
+          },
+          {
+              loader: "css-loader",
+              options: {
+                modules: true
+              }
+          }
+        ]
 		  }
     ]
 	},
