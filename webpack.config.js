@@ -1,5 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
+const precss = require('precss');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: [
@@ -16,6 +18,7 @@ module.exports = {
                 warnings: true
               }
             }),
+            new ExtractTextPlugin({ filename: 'main.css', disable: false, allChunks: true }),
             new webpack.LoaderOptionsPlugin({
                 minimize: true
             })
@@ -41,19 +44,28 @@ module.exports = {
         ]
 		  },
       {
-  			test: /\.css$/,
-  			use: [
-          {
-              loader: "style-loader"
-          },
-          {
-              loader: "css-loader",
-              options: {
-                modules: true
-              }
-          }
-        ]
-		  }
+          test: /\.scss$/,
+          use: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: [
+                {
+                    loader: 'css-loader'
+                },
+                {
+                  loader: 'postcss-loader',
+                  options: {
+                    plugins: function () {
+                      return [
+                        require('precss'),
+                        require('autoprefixer')
+                      ];
+                    }
+                  }
+                }
+            ]
+        })
+
+      }
     ]
 	},
   output: {
