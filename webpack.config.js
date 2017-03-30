@@ -2,6 +2,9 @@ const path = require('path');
 const webpack = require('webpack');
 const precss = require('precss');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HappyPack = require('happypack');
+const os = require('os');
+const happypackThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
 
 module.exports = {
   entry: [
@@ -21,27 +24,33 @@ module.exports = {
             new ExtractTextPlugin({ filename: 'main.css', disable: false, allChunks: true }),
             new webpack.LoaderOptionsPlugin({
                 minimize: true
-            })
+            }),
+            new HappyPack({
+          			id: 'js',
+          			threadPool: happypackThreadPool,
+          			loaders: ['babel-loader'],
+          			cache: true,
+          			verbose: false,
+        		}),
+        		new HappyPack({
+          			id: 'url',
+          			threadPool: happypackThreadPool,
+          			loaders: ['url-loader?limit=10000&name=images/[hash:12].[ext]'],
+          			cache: true,
+          			verbose: false,
+        		})
           ],
   devtool: 'soource-map',
 
   module: {
 		rules: [
       {
-  			test: /\.js$/,
-  			use: [
-          {
-            loader: 'babel-loader'
-          }
-        ]
+    			test: /\.js$/,
+    			use: ['happypack/loader?id=js'],
 		  },
       {
-  			test: /\.(png|jpg|gif)$/,
-  			use: [
-          {
-            loader: 'url-loader?limit=10000&name=images/[hash:12].[ext]'
-          }
-        ]
+    			test: /\.(png|jpg|gif)$/,
+    			use: ['happypack/loader?id=url'],
 		  },
       {
           test: /\.scss$/,
