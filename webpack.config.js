@@ -3,8 +3,6 @@ const webpack = require('webpack');
 const precss = require('precss');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HappyPack = require('happypack');
-const os = require('os');
-const happypackThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
 
 module.exports = {
   entry: [
@@ -27,14 +25,14 @@ module.exports = {
             }),
             new HappyPack({
           			id: 'js',
-          			threadPool: happypackThreadPool,
+          			threads: 2,
           			loaders: ['babel-loader'],
           			cache: true,
           			verbose: false,
         		}),
         		new HappyPack({
           			id: 'url',
-          			threadPool: happypackThreadPool,
+          			threads: 2,
           			loaders: ['url-loader?limit=10000&name=images/[hash:12].[ext]'],
           			cache: true,
           			verbose: false,
