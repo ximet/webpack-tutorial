@@ -1,6 +1,6 @@
-#ReactBoilerplate
+# Webpack 2 tutorial
 
-###Task:
+## Task todo: 
 
 - [ ] Work with image
 - [ ] Check how work with Bower
