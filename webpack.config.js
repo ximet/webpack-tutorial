@@ -55,7 +55,11 @@ module.exports = {
             fallback: 'style-loader',
             use: ['css-loader?importLoaders=1', 'postcss-loader']
           })
-      }
+      },
+      {
+    			test: /\.html$/,
+    			use: ['html-loader'],
+		  },
       {
           test: /\.svg$/,
           use: [
