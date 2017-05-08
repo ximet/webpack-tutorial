@@ -1,6 +1,7 @@
 import { sum } from './mathService.js';
 const app = document.getElementById('app');
 require("./style.scss");
+require("../template/row.html");
 //ex. lambda
 const summa = () => ( sum(2,3) )
 
