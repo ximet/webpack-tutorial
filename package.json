@@ -1,7 +1,7 @@
 {
   "name": "webpack2-tutorial",
   "version": "1.0.0",
-  "description": "Tutorial Webpack 2",
+  "description": "Tutorial Webpack",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && NODE_ENV=production webpack",
@@ -36,7 +36,7 @@
     "rimraf": "~2.5.4",
     "style-loader": "~0.13.2",
     "url-loader": "~0.5.7",
-    "webpack": "~2.2.0",
-    "webpack-dev-server": "~2.2.0"
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
   }
 }
