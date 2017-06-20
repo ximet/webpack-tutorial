@@ -10,6 +10,7 @@ module.exports = {
   			    'webpack-dev-server/client?http://localhost:8082'
           ],
   plugins: [
+            new webpack.optimize.ModuleConcatenationPlugin(),
             new webpack.HotModuleReplacementPlugin(),
             new webpack.optimize.UglifyJsPlugin({
               sourceMap: true,
