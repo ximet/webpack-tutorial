@@ -494,5 +494,511 @@
         ]
       }
     ]
+  },
+  {
+    "timeStamp": 1513012812863,
+    "time": 5436,
+    "hash": "a1e606b74f2502fa957f",
+    "errors": [],
+    "size": 223385,
+    "assets": [
+      {
+        "name": "bundle.js",
+        "chunks": [
+          0
+        ],
+        "size": 223269,
+        "miniSize": 222924,
+        "minified": false
+      },
+      {
+        "name": "main.css",
+        "chunks": [
+          0
+        ],
+        "size": 116
+      }
+    ],
+    "chunks": [
+      {
+        "size": 326574,
+        "files": [
+          "bundle.js",
+          "main.css"
+        ],
+        "modules": [
+          {
+            "name": "./node_modules/inherits/inherits_browser.js",
+            "size": 701,
+            "id": 0
+          },
+          {
+            "name": "(webpack)/buildin/global.js",
+            "size": 823,
+            "id": 1
+          },
+          {
+            "name": "./node_modules/process/browser.js",
+            "size": 5449,
+            "id": 2
+          },
+          {
+            "name": "./node_modules/debug/src/browser.js",
+            "size": 4957,
+            "id": 3
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/event/emitter.js",
+            "size": 1271,
+            "id": 4
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/url.js",
+            "size": 1029,
+            "id": 5
+          },
+          {
+            "name": "./node_modules/json3/lib/json3.js",
+            "size": 44331,
+            "id": 6
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/event.js",
+            "size": 2082,
+            "id": 7
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/random.js",
+            "size": 775,
+            "id": 8
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/lib/ajax-based.js",
+            "size": 1319,
+            "id": 9
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/sender/xhr-local.js",
+            "size": 349,
+            "id": 10
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/browser.js",
+            "size": 579,
+            "id": 11
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/iframe.js",
+            "size": 5417,
+            "id": 12
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/receiver/xhr.js",
+            "size": 1589,
+            "id": 13
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/sender/xhr-cors.js",
+            "size": 340,
+            "id": 14
+          },
+          {
+            "name": "(webpack)/buildin/amd-options.js",
+            "size": 82,
+            "id": 15
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/sender/xdr.js",
+            "size": 2470,
+            "id": 16
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/lib/iframe-wrap.js",
+            "size": 981,
+            "id": 17
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/object.js",
+            "size": 864,
+            "id": 18
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/event/event.js",
+            "size": 479,
+            "id": 19
+          },
+          {
+            "name": "(webpack)/hot/log.js",
+            "size": 1012,
+            "id": 20
+          },
+          {
+            "name": "(webpack)/hot/emitter.js",
+            "size": 89,
+            "id": 21
+          },
+          {
+            "name": "./node_modules/url/url.js",
+            "size": 23118,
+            "id": 22
+          },
+          {
+            "name": "(webpack)/buildin/module.js",
+            "size": 521,
+            "id": 23
+          },
+          {
+            "name": "./node_modules/strip-ansi/index.js",
+            "size": 161,
+            "id": 24
+          },
+          {
+            "name": "./node_modules/loglevel/lib/loglevel.js",
+            "size": 8657,
+            "id": 25
+          },
+          {
+            "name": "(webpack)-dev-server/client/socket.js",
+            "size": 872,
+            "id": 26
+          },
+          {
+            "name": "./node_modules/url-parse/index.js",
+            "size": 11789,
+            "id": 27
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/event/eventtarget.js",
+            "size": 1857,
+            "id": 28
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/lib/sender-receiver.js",
+            "size": 1183,
+            "id": 29
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/browser/abstract-xhr.js",
+            "size": 4883,
+            "id": 30
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/xdr-streaming.js",
+            "size": 984,
+            "id": 31
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/eventsource.js",
+            "size": 767,
+            "id": 32
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/browser/eventsource.js",
+            "size": 51,
+            "id": 33
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/iframe.js",
+            "size": 3863,
+            "id": 34
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/version.js",
+            "size": 40,
+            "id": 35
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/htmlfile.js",
+            "size": 710,
+            "id": 36
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/xhr-polling.js",
+            "size": 895,
+            "id": 37
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/location.js",
+            "size": 181,
+            "id": 38
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/info-iframe-receiver.js",
+            "size": 793,
+            "id": 39
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/info-ajax.js",
+            "size": 1037,
+            "id": 40
+          },
+          {
+            "name": "(webpack)-dev-server/client/overlay.js",
+            "size": 3607,
+            "id": 41
+          },
+          {
+            "name": "./node_modules/html-entities/lib/html5-entities.js",
+            "size": 48968,
+            "id": 42
+          },
+          {
+            "name": "(webpack)/hot nonrecursive ^\\.\\/log$",
+            "size": 170,
+            "id": 43
+          },
+          {
+            "name": "multi (webpack)-dev-server/client?http://localhost:8080 ./src/index.js webpack/hot/dev-server webpack-dev-server/client?http://localhost:8082",
+            "size": 64,
+            "id": 44
+          },
+          {
+            "name": "(webpack)-dev-server/client?http://localhost:8080",
+            "size": 5970,
+            "id": 45
+          },
+          {
+            "name": "./node_modules/punycode/punycode.js",
+            "size": 15102,
+            "id": 46
+          },
+          {
+            "name": "./node_modules/url/util.js",
+            "size": 672,
+            "id": 47
+          },
+          {
+            "name": "./node_modules/querystring-es3/index.js",
+            "size": 126,
+            "id": 48
+          },
+          {
+            "name": "./node_modules/querystring-es3/decode.js",
+            "size": 2535,
+            "id": 49
+          },
+          {
+            "name": "./node_modules/querystring-es3/encode.js",
+            "size": 2915,
+            "id": 50
+          },
+          {
+            "name": "./node_modules/ansi-regex/index.js",
+            "size": 139,
+            "id": 51
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/entry.js",
+            "size": 243,
+            "id": 52
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport-list.js",
+            "size": 596,
+            "id": 53
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/websocket.js",
+            "size": 2737,
+            "id": 54
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/browser-crypto.js",
+            "size": 439,
+            "id": 55
+          },
+          {
+            "name": "./node_modules/requires-port/index.js",
+            "size": 763,
+            "id": 56
+          },
+          {
+            "name": "./node_modules/url-parse/node_modules/querystringify/index.js",
+            "size": 1505,
+            "id": 57
+          },
+          {
+            "name": "./node_modules/debug/src/debug.js",
+            "size": 4411,
+            "id": 58
+          },
+          {
+            "name": "./node_modules/ms/index.js",
+            "size": 3057,
+            "id": 59
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/browser/websocket.js",
+            "size": 209,
+            "id": 60
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/xhr-streaming.js",
+            "size": 1250,
+            "id": 61
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/lib/buffered-sender.js",
+            "size": 2307,
+            "id": 62
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/lib/polling.js",
+            "size": 1323,
+            "id": 63
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/receiver/eventsource.js",
+            "size": 1593,
+            "id": 64
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/receiver/htmlfile.js",
+            "size": 2229,
+            "id": 65
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/xdr-polling.js",
+            "size": 712,
+            "id": 66
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/jsonp-polling.js",
+            "size": 1016,
+            "id": 67
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/receiver/jsonp.js",
+            "size": 5578,
+            "id": 68
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/sender/jsonp.js",
+            "size": 2483,
+            "id": 69
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/main.js",
+            "size": 11906,
+            "id": 70
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/shims.js",
+            "size": 17504,
+            "id": 71
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/escape.js",
+            "size": 2374,
+            "id": 72
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/transport.js",
+            "size": 1366,
+            "id": 73
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/utils/log.js",
+            "size": 448,
+            "id": 74
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/event/close.js",
+            "size": 292,
+            "id": 75
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/event/trans-message.js",
+            "size": 289,
+            "id": 76
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/info-receiver.js",
+            "size": 2236,
+            "id": 77
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/transport/sender/xhr-fake.js",
+            "size": 455,
+            "id": 78
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/info-iframe.js",
+            "size": 1546,
+            "id": 79
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/iframe-bootstrap.js",
+            "size": 2912,
+            "id": 80
+          },
+          {
+            "name": "./node_modules/sockjs-client/lib/facade.js",
+            "size": 724,
+            "id": 81
+          },
+          {
+            "name": "./node_modules/ansi-html/index.js",
+            "size": 4665,
+            "id": 82
+          },
+          {
+            "name": "./node_modules/html-entities/index.js",
+            "size": 245,
+            "id": 83
+          },
+          {
+            "name": "./node_modules/html-entities/lib/xml-entities.js",
+            "size": 2977,
+            "id": 84
+          },
+          {
+            "name": "./node_modules/html-entities/lib/html4-entities.js",
+            "size": 6578,
+            "id": 85
+          },
+          {
+            "name": "./node_modules/events/events.js",
+            "size": 8450,
+            "id": 86
+          },
+          {
+            "name": "./src/index.js",
+            "size": 375,
+            "id": 87
+          },
+          {
+            "name": "./src/mathService.js",
+            "size": 210,
+            "id": 88
+          },
+          {
+            "name": "./src/style.scss",
+            "size": 41,
+            "id": 89
+          },
+          {
+            "name": "./template/row.html",
+            "size": 57,
+            "id": 90
+          },
+          {
+            "name": "(webpack)/hot/dev-server.js",
+            "size": 1587,
+            "id": 91
+          },
+          {
+            "name": "(webpack)/hot/log-apply-result.js",
+            "size": 1298,
+            "id": 92
+          },
+          {
+            "name": "(webpack)-dev-server/client?http://localhost:8082",
+            "size": 5970,
+            "id": 93
+          }
+        ]
+      }
+    ]
   }
 ]
