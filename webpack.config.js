@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HappyPack = require('happypack');
 const WebpackMonitor = require('webpack-monitor');
+const NODE_ENV = global.process.env.NODE_ENV;
 
 module.exports = {
   entry: [
@@ -12,12 +13,14 @@ module.exports = {
           ],
   plugins: [
             new webpack.optimize.ModuleConcatenationPlugin(),
-            new WebpackMonitor({
-              capture: true, // -> default 'true'
-              target: '../monitor/myStatsStore.json', // default -> '../monitor/stats.json'
-              launch: true, // -> default 'false'
-              port: 3030, // default -> 8081
-            }),
+            NODE_ENV === 'local'
+              ? new WebpackMonitor({
+                capture: true, // -> default 'true'
+                target: '../monitor/myStatsStore.json', // default -> '../monitor/stats.json'
+                launch: true, // -> default 'false'
+                port: 3030, // default -> 8081
+              })
+              : function () {},
             new webpack.HotModuleReplacementPlugin(),
             new webpack.optimize.UglifyJsPlugin({
               sourceMap: true,
